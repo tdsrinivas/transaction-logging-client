@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Configuration;
 import java.util.Collections;
 
 @Configuration
-@RibbonClient(value = "transaction-logging", configuration = TransactionLoggingClientConfiguration.class)
-public class TransactionLoggingClientConfiguration {
+@RibbonClient(value = "transaction-logging", configuration = TestClientConfiguration.class)
+public class TestClientConfiguration {
     @Bean
     public ILoadBalancer ribbonLoadBalancer() {
         BaseLoadBalancer balancer = new BaseLoadBalancer();

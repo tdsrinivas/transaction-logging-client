@@ -6,9 +6,9 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 @EnableFeignClients
 @SpringBootApplication(scanBasePackages = "com.raj")
-public class TestTransactionLoggingApplication {
+public class TestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TestTransactionLoggingApplication.class, args);
+		SpringApplication.run(TestApplication.class, args);
 	}
 }
