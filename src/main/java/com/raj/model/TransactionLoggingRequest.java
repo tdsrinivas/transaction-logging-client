@@ -1,7 +1,9 @@
-package com.srini.model;
+package com.raj.model;
 
 import lombok.Builder;
 import lombok.Data;
+
+import java.util.Date;
 
 @Data
 @Builder
@@ -13,6 +15,6 @@ public class TransactionLoggingRequest {
     private final String traceId;
     private final String operation;
     private final Direction direction;
-    private final Long timestamp;
+    private final Long timestamp = new Date().getTime();
     private final String body;
 }
